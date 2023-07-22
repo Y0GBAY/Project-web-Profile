@@ -1,0 +1,142 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;
+  }
+
+body {
+   background-color: white;
+}
+
+.main  {
+    width: 1250px;
+    
+    margin-top: 12rem;
+    margin-left: 50%;
+    /* display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap; */
+    /* top: 50%; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 5px solid gray;
+    border-radius: 5px;
+}
+
+.wrap {
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.wrap img {
+    
+    vertical-align: middle;
+    width: 100%;
+    height: 380px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    
+    80% {
+        transform: translateX(-200%);
+    }
+    
+    90% {
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        transform: translateX(-300%);
+    }
+
+}
+.menu h2 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: var(--bg);
+}
+
+.menu h2 span {
+    color: rgb(179, 25, 25);
+}
+
+/* .menu p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+    color: var(--bg);
+} */
+
+.menu .gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25rem;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery-konten {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgb(196, 194, 194);
+    text-align: center;
+    padding-bottom: 2rem;
+    box-shadow: 5px 5px 5px 0px var(--bg);
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.menu .gallery .gallery-konten img {
+    width: 80%;
+    padding-top: 2rem;
+    border-radius: 10px;
+}
+
+.menu .gallery .gallery-konten .gallery-konten-me {
+    margin-top: 1rem auto 0.5rem;
+}
+
+.menu .harga {
+    color: var(--bg);
+    font-weight: 700;
+}
+
+.menu-btn .cta {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color:  rgb(210, 31, 31);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    flex-wrap: wrap;
+    text-decoration: none;
+  }
